@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "WhatsApp command bot with a styled menu inspired by the supplied reference.",
-  "main": "index.js",
+  "main": "index.js","engines": {
+  "node": "20.x"
+},
   "scripts": {
     "start": "node index.js"
   },
