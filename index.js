@@ -179,7 +179,7 @@ async function startBot() {
             break;
           }
           // Intentionally allow only basic calculator characters.
-          if (!/^[0-9+\\-*/().%\\s]+$/.test(expression)) {
+          if (!/^[0-9+*\/().%\s-]+$/.test(expression)) {
             await sock.sendMessage(jid, { text: "❌ Only basic calculator expressions are allowed." });
             break;
           }
